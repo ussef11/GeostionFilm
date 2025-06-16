@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "./HomePage.css"
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   // Custom hook for API calls
@@ -30,12 +31,12 @@ const HomePage = () => {
   };
 
   // Movie Card Component
-  const MovieCard = ({ movie, size = "normal" }) => {
+  const MovieCard = ({   movie, size = "normal" }) => {
     const imageSize = size === "large" ? "w500" : "w300";
     const cardSize = size === "large" ? "w-64 h-96" : "w-48 h-72";
-
+ 
     return (
-      <div className={`${cardSize} flex-shrink-0 movie-card cursor-pointer`}>
+      <Link to={`film/${movie.id}`} className={`${cardSize} flex-shrink-0 movie-card cursor-pointer`}>
         <div className="relative h-full rounded-lg overflow-hidden bg-gray-800">
           <img
             src={
@@ -61,7 +62,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     );
   };
 

@@ -3,6 +3,8 @@ import Home from "./pages/HomePage/HomePage";
 import Film from "./pages/DetailsFilms/DetailsFilms";
 import Layout from "./Component/Layout";
 import SideBar from "./Component/SideBar";
+import WatchList from "./pages/WatchList/WatchList";
+import NewMovie from "./pages/AddNewMovie/NewMovie";
  
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
        
         <Route path="/" element={<SideBar />}>
           <Route index element={<Home />} />
-          <Route path="film" element={<Film />} />
+          <Route path="film/:id" element={<Film />} />
+          <Route path="WatchList" element={<WatchList />} />
+          <Route path="addNew" element={<NewMovie />} />
         </Route>
       </Routes>
     </BrowserRouter>

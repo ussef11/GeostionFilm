@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "./SideBar.css";
 
 const SideBar = () => {
-  const [activeItem, setActiveItem] = useState("Dashboard");
+  const [activeItem, setActiveItem] = useState("Home");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
  
   const navigationItems = [
-    { name: "Dashboard", icon: "fas fa-home" },
-    { name: "My Watchlist", icon: "fa-solid fa-film" },
-    { name: "History", icon: "fa-solid fa-clock-rotate-left" },
-    { name: "Support", icon: "fa-solid fa-headset" },
-    { name: "Settings", icon: "fa-solid fa-gear" },
+    { name: "Home", icon: "fas fa-home" , path:'/' },
+    { name: "My Watchlist", icon: "fa-solid fa-film" ,path:'/WatchList' },
+    { name: "New Movie", icon: "fa-solid fa-clock-rotate-left" ,path:'/addNew' },
+    { name: "Support", icon: "fa-solid fa-headset"  ,path:'/'},
+    { name: "Settings", icon: "fa-solid fa-gear" ,path:'/'},
   ]; 
    const handleItemClick = (itemName) => {
     setActiveItem(itemName);
-    setIsSidebarOpen(false); // close sidebar on mobile when item is clicked
+    setIsSidebarOpen(false);
   };
 
   const toggleSidebar = () => {
@@ -48,7 +48,8 @@ const SideBar = () => {
         {/* Navigation */}
         <nav className="mt-6 px-4">
           {navigationItems.map((item) => (
-            <div
+            <Link
+              to={`${item.path}`}
               key={item.name}
               className={`nav-item flex items-center justify-between px-4 py-3 rounded-lg cursor-pointer mb-2 ${
                 activeItem === item.name ? "bg-white bg-opacity-10" : ""
@@ -59,7 +60,7 @@ const SideBar = () => {
                 <i className={`${item.icon} w-5 text-center mr-3`}></i>
                 <span className="font-medium">{item.name}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </nav>
 
@@ -72,9 +73,9 @@ const SideBar = () => {
               </div>
             </div>
             <div>
-              <p className="font-semibold">Tom Cook</p>
+              <p className="font-semibold">Youssef</p>
               <p className="text-sm text-white text-opacity-70">
-                tom@example.com
+                Youssef@contact.com
               </p>
             </div>
           </div>
