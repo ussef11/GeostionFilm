@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.sidebar-gradient {
+  background: linear-gradient(169deg, #444445 0%, #000000 100%);
+}
+.nav-item {
+  border-radius: 19px;
+}
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+  transition: all 0.2s ease;
+}
+.team-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.badge {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.searchInput{
+    width: 80%;
+        color: white;
+        height: 46px;
+}
+
+.theApp{
+        background: linear-gradient(169deg, #444445 0%, #000000 100%);
+}
