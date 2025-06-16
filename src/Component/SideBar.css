@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 .sidebar-gradient {
-  background: linear-gradient(169deg, #444445 0%, #000000 100%);
+ background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
 }
 .nav-item {
   border-radius: 19px;
 }
 .nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
   transform: translateX(4px);
   transition: all 0.2s ease;
 }
 .team-item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
 }
 .badge {
-  background-color: rgba(255, 255, 255, 0.2);
+ background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
 }
 
 
@@ -27,4 +27,9 @@
 
 .theApp{
         background: linear-gradient(169deg, #444445 0%, #000000 100%);
+}
+
+
+.searchBarDiv{
+ background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
 }

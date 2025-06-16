@@ -90,9 +90,9 @@ const SideBar = () => {
       )}
 
       {/* Main Content */}
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto"  style={{backgroundColor :"#000"}}>
         {/* Header */}
-        <div className="shadow-sm px-6 py-4 ">
+        <div className="searchBarDiv shadow-sm px-6 py-4 ">
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center " style={{width :'100%'}}>
               <button
@@ -124,7 +124,7 @@ const SideBar = () => {
         </div>
 
         {/* Page Content */}
-        <div className="p-8">
+        <div className="">
           <Outlet />
         </div>
       </div>
