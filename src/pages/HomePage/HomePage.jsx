@@ -257,7 +257,7 @@ const HomePage = () => {
       <footer className="bg-gray-900 py-8 px-4 sm:px-6 lg:px-8 mt-12">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Movie Streaming Platform. Powered by The Movie Database.
+            © 2025 Movie Streaming Platform. Powered by The Movie ussef11.
           </p>
         </div>
       </footer>

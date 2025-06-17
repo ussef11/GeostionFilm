@@ -1,35 +1,78 @@
 @import "tailwindcss";
 
 .sidebar-gradient {
- background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 .nav-item {
   border-radius: 19px;
 }
 .nav-item:hover {
-background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   transform: translateX(4px);
   transition: all 0.2s ease;
 }
 .team-item:hover {
-background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 .badge {
- background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
-
-.searchInput{
-    width: 80%;
-        color: white;
-        height: 46px;
+.searchInput {
+  width: 80%;
+  color: white;
+  height: 46px;
 }
 
-.theApp{
-        background: linear-gradient(169deg, #444445 0%, #000000 100%);
+.theApp {
+  background: linear-gradient(169deg, #444445 0%, #000000 100%);
 }
 
+.searchBarDiv {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
 
-.searchBarDiv{
- background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+.animated-box {
+  position: absolute;
+    width: 99%;
+  overflow: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+ 
+ 
+}
+
+ 
+.fade-in {
+  transform: scale(1);
+}
+
+.fade-out {
+  transform: scale(0.95);
 }
